@@ -1,0 +1,164 @@
+.fancy {
+  background-color: transparent; 
+  border:2px solid #000; 
+  border-radius:0; 
+  -webkit-box-sizing:border-box; 
+  box-sizing:border-box; 
+  color:#fff; 
+  cursor:pointer; 
+  display:inline-block; 
+  // float:right; 
+  font-weight:700; 
+  letter-spacing:.05em; 
+  margin:0; 
+  outline:none; 
+  overflow:visible; 
+  padding:1.25em 2em; 
+  position:relative; 
+  text-align:center; 
+  text-decoration:none; 
+  text-transform:none; 
+  -webkit-transition:
+  all .3s ease-in-out; 
+  transition:
+  all .3s ease-in-out; 
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select:none; 
+  user-select:none; 
+  font-size:13px;
+ 
+  &::before {
+   content: " ";
+   width: .9375rem;
+   height: .125rem;
+   background: black;
+   top: .5em;
+   left: .9375rem;
+   position: absolute;
+   transform-origin: center;
+   transition: all .2s ease-in-out;
+ }
+    background: .3s linear,
+    width .3s linear,
+    left .3s linear,
+    top .3s linear,
+    height .3s linear,
+    transform .3s linear,
+    opacity .3s linear,
+    visibility .3s linear,
+    -webkit-transform-origin .3s linear,
+    transform-origin .3s linear,
+    -webkit-transform-style .3s linear,
+    transform-style .3s linear,
+    -webkit-backface-visibility .3s linear,
+    backface-visibility .3s linear,
+    -webkit-perspective .3s linear,
+    perspective .3s linear,
+    -webkit-perspective-origin .3s linear,
+    perspective-origin .3s linear,
+    -webkit-transform-style .3s linear,
+    transform-style .3s linear,
+    -webkit-backface-visibility .3s linear,
+    backface-visibility .3s linear,
+    -webkit-perspective .3s linear,
+    perspective .3s linear,
+    -webkit-perspective-origin .3s linear,
+    perspective-origin .3s linear
+  }
+ 
+  .text {
+   font-size: .9375em;
+   line-height: .9375em;
+   padding-left: .9375em;
+   display: block;
+   text-align: left;
+   transition: text-transform .2s ease-in-out;
+   text-transform: none;
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .top-key {
+   height: .125rem;
+   width: .9375rem;
+   top: -.125rem;
+   left: .3125rem;
+   position: absolute;
+   background: #e8e8e8;
+   transition: left .5s ease-out, width .5s ease-out;
+ }
+ 
+ .bottom-key-1 {
+   height: .125rem;
+   width: .9375rem;
+   right: .9375rem;
+   bottom: -.125rem;
+   position:absolute;
+   background:#e8e8e8;
+   transition:right .5s ease-out, width .5s ease-out; 
+ }
+ 
+ .bottom-key-2 {
+     height:.125rem; 
+     width:.3125rem; 
+     right:.3125rem; 
+     position:absolute; 
+     background:#e8e8e8; 
+     transition:right .5s ease-out, width .5s ease-out; 
+ }
+ .fancy {
+   &::after {
+     content:" "; 
+     width:.9375rem; 
+     height:.125rem; 
+     background:black; 
+     left:.9375rem; 
+     transform-origin:center; 
+     transition:left auto, right auto, top auto, bottom auto, width auto, height auto, background auto, opacity auto, visibility auto, transform auto, transform-origin auto, transform-style auto, backface-visibility auto, perspective auto, perspective-origin auto; 
+   }
+ }
+ ::before,
+ ::after {
+ .top-key,
+ .bottom-key-1,
+ .bottom-key-2 {
+   transform: none;
+   -ms-transform: none;
+   transform-origin: center;
+   -ms-transform-origin: center;
+ }
+ }
+ ::before,
+ ::after {
+ .top-key,
+ .bottom-key-1,
+ .bottom-key-2 {
+   transform: none;
+   -o-transform: none;
+   transform-origin: center;
+   -o-transform-origin: center;
+ }
+ }
+ ::before,
+ ::after {
+ .top-key,
+ .bottom-key-1,
+ .bottom-key-2 {
+   transform: none;
+   -moz-transform: none;
+   transform-origin: center;
+   -moz-transform-origin: center;
+ }
+ }
+ ::before,
+ ::after {
+ .top-key,
+ .bottom-key-1,
+ .bottom-key-2 {
+   transform: none;
+   -webkit-transform: none;
+   transform-origin: center;
+   -webkit-transform-origin: center;
+ }
+ }

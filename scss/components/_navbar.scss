@@ -1,0 +1,75 @@
+.navbar {
+  @include flex-center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 15px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+nav {
+  i {
+    position:absolute;
+    top: 15px 45px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    i {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo {
+  margin-right: 50px;
+  color: #000;
+  background-color: #000;
+}
+
+.list {
+  color: #000;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler,
+.navbar label{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+ .menu {
+   width: 100px;
+   max-height: 0;
+   overflow:hidden;
+
+   .list {
+     flex-direction: column;
+     align-items:center;
+     padding:20px;
+   }
+
+   .navbar label {
+     display:inline-flex;
+     align-items:center;
+     cursor:pointer; 
+   }
+
+   #toggler:checked ~ & {
+     max-height:100px; 
+   }
+ }
+}
